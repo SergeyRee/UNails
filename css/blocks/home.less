@@ -1,0 +1,66 @@
+// main: ../style.less
+.home {
+    color: @darkgreen;
+    background-image: url(../img/bg-pink.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 740px;
+}
+
+.home h2 {
+    font-size: 130px;
+    font-family: 'Kaushan Script', cursive;
+    font-weight: bold;
+}
+
+.home__title {
+    padding-top: 12rem;
+}
+
+.home__subtitle {
+    font-family: 'Marck Script', cursive;
+    font-size: 40px;
+    font-weight: 600;
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 8rem;
+}
+
+@media (max-width: 990px) {
+    .home h2 {
+        font-size: 90px;
+    }
+    .home__subtitle {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 772px) {
+    .home h2 {
+        font-size: 75px;
+    }
+    .home__subtitle {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 650px) {
+    .home h2 {
+        font-size: 60px;
+    }
+    .home__subtitle {
+        font-size: 20px;
+    }
+}
+
+.social__items-home {
+    position: absolute;
+    top: 200px;
+    left: 0;
+    z-index: 2;
+}
+
+.social__icon-home {
+    width: 2rem;
+    margin-top: 1rem;
+}

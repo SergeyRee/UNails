@@ -1,0 +1,36 @@
+// compress: true, sourceMap: true
+
+@import "vars";
+
+body {
+    background-color: @pink;
+    font-size: 14px;
+}
+
+.chapter__title {
+    font-size: 50px;
+    color: @darkgreen;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    padding-top: 4rem;
+
+}
+
+@media (max-width: 995px) {
+    .chapter__title {
+        font-size: 30px;
+        margin-bottom: 1rem;
+        padding-top: 2rem;
+    }
+}
+
+
+/*Blocks*/
+@import "blocks/header";
+@import "blocks/home";
+@import "blocks/sale";
+@import "blocks/service";
+@import "blocks/gallery";
+@import "blocks/footer";
+@import "blocks/map";

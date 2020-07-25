@@ -1,0 +1,103 @@
+// main: ../style.less
+.service {
+    background-image: url(../img/bg-wood.jpg);
+}
+
+.service .card {
+    background-color: @darkgreen;
+    color: @primary;
+    margin: 4rem 1rem;
+    border: 0;
+}
+
+@media (max-width: 995px) {
+    .service .card {
+        font-size: 20px;
+        margin: 1rem 0.3rem;
+    }
+}
+
+@media (max-width: 995px) {
+    .card-text {
+        font-size: 14px;
+        margin: 1rem 0.3rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .service__inner {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    .card {
+        width: 100% !important;
+    }
+}
+
+/* Superiority */
+
+.superiority {
+    margin-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+@media (max-width: 450px) {
+    .superiority {
+      margin-top: 1rem;
+    padding-bottom: 1rem;
+    }
+}
+.superiority__title {
+    font-size: 24px;
+    margin: 15px 0px;
+    font-weight: 400;
+    height: 2rem;
+    font-weight: 500;
+
+    text-transform: uppercase;
+
+}
+
+@media (max-width: 995px) {
+    .superiority__title {
+      font-size: 18px;
+    }
+}
+
+@media (max-width: 450px) {
+    .superiority__title {
+      font-size: 12px;
+    }
+}
+.superiority__text {
+    font-size: 20px;
+    font-weight: 400;
+    padding-top: 2.5rem;
+}
+
+@media (max-width: 450px) {
+    .superiority__text {
+      font-size: 10px;
+    }
+}
+
+.superiority__item {
+    padding: 1rem;
+}
+
+.superiority__icon {
+    width: 11rem;
+
+}
+
+@media (max-width: 750px) {
+    .superiority__icon {
+      width: 50%;
+    }
+}
+
+

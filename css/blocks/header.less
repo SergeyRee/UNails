@@ -1,0 +1,207 @@
+// main: ../style.less
+.header {
+    width: 100%;
+    text-transform: uppercase;
+}
+
+.header-overlay {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1300px;
+    padding: 0.7rem 2rem;
+
+}
+
+
+/* Условие для экранов с шириной от 0 до 1200px */
+
+@media (max-width: 768px) {
+    .nav-container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+
+/* ------------ Desktop navigation ----------- */
+
+.nav {
+    list-style-type: none;
+    display: flex;
+}
+
+
+/* Условие для экранов с шириной от 0 до 1200px */
+
+@media (max-width: 1200px) {
+    .nav {
+        display: none;
+    }
+}
+
+.nav__item {
+    margin-right: 3rem;
+}
+
+.nav__item:last-child {
+    margin-right: 0rem;
+}
+
+.nav__link {
+    font-size: 22px;
+    font-weight: 600;
+    color: @primary;
+    text-decoration: none;
+    &:hover {
+        color: @pink;
+        transition: 0.2s linear;
+    }
+}
+
+
+/* --------------- Mobile navigation button ----------- */
+
+.menu-icon {
+    z-index: 19;
+    position: relative;
+    display: none;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+
+/* Условие для экранов с шириной от 0 до 1200px */
+
+@media (max-width: 1200px) {
+    .menu-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.menu-icon-line {
+    position: relative;
+    width: 30px;
+    height: 5px;
+    background-color: #fff;
+}
+
+.menu-icon-line::before {
+    position: absolute;
+    left: 0;
+    top: -10px;
+    content: '';
+    width: 30px;
+    height: 5px;
+    background-color: #fff;
+    transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+}
+
+.menu-icon-line::after {
+    position: absolute;
+    left: 0;
+    top: 10px;
+    content: '';
+    width: 30px;
+    height: 5px;
+    background-color: @pink;
+    transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+}
+
+.menu-icon.menu-icon-active .menu-icon-line {
+    background-color: transparent;
+}
+
+.menu-icon.menu-icon-active .menu-icon-line::before {
+    transform: rotate(45deg);
+    top: 0;
+    transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+}
+
+.menu-icon.menu-icon-active .menu-icon-line::after {
+    transform: rotate(-45deg);
+    top: 0;
+    transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+}
+
+
+/* ----------------- Мобильная навигация ----------------- */
+
+.mobile-nav {
+    z-index: 9;
+    display: block;
+    position: absolute;
+    right: -350px;
+    top: 0;
+    /*height: 100%;*/
+    width: 350px;
+    padding: 50px;
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: transform 0.4s ease-in;
+}
+
+
+/* Условие для экранов с шириной от 0 до 1200px */
+
+@media (max-width: 768px) {
+    .mobile-nav {
+        width: 320px;
+        right: -320px;
+    }
+}
+
+.mobile-nav--active {
+    transform: translateX(-100%);
+}
+
+.mobile-nav__title {
+    font-size: 28px;
+    font-weight: 800;
+    margin-bottom: 30px;
+    color: @red;
+}
+
+.mobile-nav__list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.mobile-nav__item {
+    margin-bottom: 30px;
+}
+
+.mobile-nav__link {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.mobile-nav__link:hover {
+    color: @pink;
+    transition: 0.2s linear;
+}
+
+
+.logo {
+    width: 8rem;
+}
+
+.logo2 {
+    width: 5rem;
+}
