@@ -22,9 +22,9 @@
             <div class="nav-container">
                 <div class="col-2"> <img src="img/Logo1.png" alt="" class="logo"> <img src="img/Logo2.png" alt=""
                         class="logo2 text-center"></div>
-                <div class="nav-wrapper">
+                <nav class="nav-wrapper">
                     <ul class="nav">
-                        <li class="nav__item"><a href="#a1" class="nav__link">Главная</a></li>
+                        <li class="nav__item"><a href="#a1" class="nav__link nav__link-active">Главная</a></li>
                         <li class="nav__item"><a href="#a2" class="nav__link">Услуги</a></li>
                         <li class="nav__item"><a href="#a3" class="nav__link">Работы</a></li>
                         <li class="nav__item"><a href="#a4" class="nav__link">Контакты</a></li>
@@ -32,40 +32,43 @@
                     <div id="menu-togle" class="menu-icon">
                         <div class="menu-icon-line"></div>
                     </div>
-                    <div id="mobile-nav" class="mobile-nav">
+                    <nav id="mobile-nav" class="mobile-nav">
                         <ul class="mobile-nav__list">
-                            <li class="mobile-nav__item"><a href="#a1" class="mobile-nav__link">Главная</a></li>
-                            <li class="mobile-nav__item"><a href="#a2" class="mobile-nav__link">Услуги</a></li>
-                            <li class="mobile-nav__item"><a href="#a3" class="mobile-nav__link">Работы</a></li>
-                            <li class="mobile-nav__item"><a href="#a4" class="mobile-nav__link">Контакты</a></li>
+                            <li class="mobile-nav__item"><a href="#a1" class="nav__link nav__link-active">Главная</a></li>
+                            <li class="mobile-nav__item"><a href="#a2" class="nav__link">Услуги</a></li>
+                            <li class="mobile-nav__item"><a href="#a3" class="nav__link">Работы</a></li>
+                            <li class="mobile-nav__item"><a href="#a4" class="nav__link">Контакты</a></li>
                         </ul>
-                    </div>
-                </div>
+                    </nav>
+                </nav>
             </div>
         </div>
     </header>
     <!--HOME-->
-    <div id="a1" class="home">
-        <div class="container text-center">
-            <div class="home__inner">
-                <div class="home__title">
-                    <h2>Nailartist Uliana</h2>
+    <section class="section-home">
+        <div id="a1" class="home">
+            <div class="container text-center">
+                <div class="home__inner">
+                    <div class="home__title">
+                        <h2>Nailartist Uliana</h2>
+                    </div>
+                    <div class="home__subtitle">
+                        <p>Ухоженные ногти, с красивым рисунком украсят и разнообразят Ваш образ, внесут в него новизну.
+                        </p>
+                    </div>
                 </div>
-                <div class="home__subtitle">
-                    <p>Ухоженные ногти, с красивым рисунком украсят и разнообразят Ваш образ, внесут в него новизну.</p>
+            </div>
+            <div class="row">
+                <div class="social__items-home col-1 offset-11">
+                    <a href="https://www.instagram.com/__usimarit__/?hl=en"><img src="img/instagram.svg" alt=""
+                            class="social__icon-home row"></a>
+                    <a href="#"><img src="img/whatsapp.svg" alt="" class="social__icon-home row"></a>
+                    <a href="#"><img src="img/telegram.svg" alt="" class="social__icon-home row"></a>
+                    <a href="#"><img src="img/facebook.svg" alt="" class="social__icon-home row"></a>
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="social__items-home col-1 offset-11">
-                <a href="https://www.instagram.com/__usimarit__/?hl=en"><img src="img/instagram.svg" alt=""
-                        class="social__icon-home row"></a>
-                <a href="#"><img src="img/whatsapp.svg" alt="" class="social__icon-home row"></a>
-                <a href="#"><img src="img/telegram.svg" alt="" class="social__icon-home row"></a>
-                <a href="#"><img src="img/facebook.svg" alt="" class="social__icon-home row"></a>
-            </div>
-        </div>
-    </div>
+    </section>
     <!--SALE-->
     <div id="a2" class="sale">
         <div class="container">
@@ -77,152 +80,159 @@
         </div>
     </div>
     <!--SERVICE-->
-    <div class="service">
-        <div class="container">
-            <h3 class="chapter__title">Мои Услуги</h3>
-            <div class="service__inner row text-center">
-                <div class="card" style="width: 30%;"> <img src="img/service1.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Покрытие Шеллаком</h5>
-                        <h4 class="card-price">40€</h4>
-                        <p class="card-text">Покрытие ногтей гель-лаком shellac и lechat.</p>
+    <section class="section-service">
+        <div class="service">
+            <div class="container">
+                <h3 class="chapter__title">Мои Услуги</h3>
+                <div class="service__inner row text-center">
+                    <div class="card" style="width: 30%;"> <img src="img/service1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Покрытие Шеллаком</h5>
+                            <h4 class="card-price">40€</h4>
+                            <p class="card-text">Покрытие ногтей гель-лаком shellac и lechat.</p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 30%;"> <img src="img/service2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Маникюр</h5>
+                            <h4 class="card-price">20€</h4>
+                            <p class="card-text">Все виды маникюра для мужчин и женщин.</p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 30%;"> <img src="img/service3.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Педикюр</h5>
+                            <h4 class="card-price">35€</h4>
+                            <p class="card-text">Все виды педикюра для мужчин и женщин.</p>
+                        </div>
                     </div>
                 </div>
-                <div class="card" style="width: 30%;"> <img src="img/service2.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Маникюр</h5>
-                        <h4 class="card-price">20€</h4>
-                        <p class="card-text">Все виды маникюра для мужчин и женщин.</p>
-                    </div>
-                </div>
-                <div class="card" style="width: 30%;"> <img src="img/service3.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Педикюр</h5>
-                        <h4 class="card-price">35€</h4>
-                        <p class="card-text">Все виды педикюра для мужчин и женщин.</p>
-                    </div>
-                </div>
-            </div>
-            <!-- Superiority -->
-            <div class="superiority">
-                <div class="row text-center">
-                    <div class="superiority__item col-6"> <img src="img/nail.svg" alt="" class="superiority__icon">
-                        <p class="superiority__title">Наши руки
-                            <br> в вашем полном распоряжении
-                        </p>
-                        <p class="superiority__text">Мы стараеимся воплощать в реальность
-                            <br> ваши мечты о здоровых и красивых ногтях
-                        </p>
-                    </div>
-                    <div class="superiority__item col-6"> <img src="img/nail-polish.svg" alt=""
-                            class="superiority__icon">
-                        <p class="superiority__title">Только
-                            <br> профессиональная косметика
-                        </p>
-                        <p class="superiority__text">В работе мы используем
-                            <br> только профессиональную косметику высшей категории
-                        </p>
+                <!-- Superiority -->
+                <div class="superiority">
+                    <div class="row text-center">
+                        <div class="superiority__item col-6"> <img src="img/nail.svg" alt="" class="superiority__icon">
+                            <p class="superiority__title">Наши руки
+                                <br> в вашем полном распоряжении
+                            </p>
+                            <p class="superiority__text">Мы стараеимся воплощать в реальность
+                                <br> ваши мечты о здоровых и красивых ногтях
+                            </p>
+                        </div>
+                        <div class="superiority__item col-6"> <img src="img/nail-polish.svg" alt=""
+                                class="superiority__icon">
+                            <p class="superiority__title">Только
+                                <br> профессиональная косметика
+                            </p>
+                            <p class="superiority__text">В работе мы используем
+                                <br> только профессиональную косметику высшей категории
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
     <!--GALLERY-->
-    <div id="a3" class="gallery">
-        <div class="container">
-            <h3 class="chapter__title">Мои Работы</h3>
-            <!-- Full-width images with number text -->
-            <div class="mySlides">
-                <div class="numbertext">1 / 6</div> <img src="img/slide1.jpg" style="width:100%">
-            </div>
-            <div class="mySlides">
-                <div class="numbertext">2 / 6</div> <img src="img/slide2.jpg" style="width:100%">
-            </div>
-            <div class="mySlides">
-                <div class="numbertext">3 / 6</div> <img src="img/slide1.jpg" style="width:100%">
-            </div>
-            <div class="mySlides">
-                <div class="numbertext">4 / 6</div> <img src="img/slide2.jpg" style="width:100%">
-            </div>
-            <div class="mySlides">
-                <div class="numbertext">5 / 6</div> <img src="img/slide1.jpg" style="width:100%">
-            </div>
-            <div class="mySlides">
-                <div class="numbertext">6 / 6</div> <img src="img/slide2.jpg" style="width:100%">
-            </div>
-            <!-- Next and previous buttons --><a class="prev" onclick="plusSlides(-1)">&#10094;</a> <a class="next"
-                onclick="plusSlides(1)">&#10095;</a>
-            <!-- Image text -->
-            <div class="caption-container">
-                <p id="caption"></p>
-            </div>
-            <!-- Thumbnail images -->
-            <div class="row">
-                <div class="column"> <img class="demo cursor" src="img/slide1.jpg" style="width:100%"
-                        onclick="currentSlide(1)" alt="some description"> </div>
-                <div class="column"> <img class="demo cursor" src="img/slide2.jpg" style="width:100%"
-                        onclick="currentSlide(2)" alt="some description"> </div>
-                <div class="column"> <img class="demo cursor" src="img/slide1.jpg" style="width:100%"
-                        onclick="currentSlide(3)" alt="some description"> </div>
-                <div class="column"> <img class="demo cursor" src="img/slide2.jpg" style="width:100%"
-                        onclick="currentSlide(4)" alt="some description"> </div>
-                <div class="column"> <img class="demo cursor" src="img/slide1.jpg" style="width:100%"
-                        onclick="currentSlide(5)" alt="some description"> </div>
-                <div class="column"> <img class="demo cursor" src="img/slide2.jpg" style="width:100%"
-                        onclick="currentSlide(6)" alt="some description"> </div>
-            </div>
-        </div>
-    </div>
-    <!--MAP-->
-    <div class="map">
-        <div class="container">
-            <h3 class="chapter__title">Мои Контакты</h3>
-        </div>
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2491.6247282082463!2d16.37094590461666!3d48.208278457576064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476d079f2959e943%3A0xa136325952cf712e!2sStephansplatz!5e0!3m2!1sen!2sat!4v1595683353645!5m2!1sen!2sat"
-            width="100%" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-            tabindex="0"></iframe>
-    </div>
-    <!--FOOTER-->
-    <div class="contact">
-        <div id="a4" class="container">
-            <div class="row">
-                <div class="col-md-4 col-sm-6">
-                    <div class="contact__title">Коротко о нас</div>
-                    <div class="contact__text">Ухоженные ногти, с красивым рисунком украсят и разнообразят Ваш образ,
-                        внесут в него новизну. Дизайн ногтей фото 2020 предлагает интересные варианты, как сделать
-                        маникюр стильным и модным. Сделайте свой образ оригинальным, ярким и завершенным с помощью
-                        маникюра. Красивый, модный маникюр с дизайном – это украшение женщины.</div>
+    <section class="section-gallery">
+        <div id="a3" class="gallery">
+            <div class="container">
+                <h3 class="chapter__title">Мои Работы</h3>
+                <!-- Full-width images with number text -->
+                <div class="mySlides">
+                    <div class="numbertext">1 / 6</div> <img src="img/slide1.jpg" style="width:100%">
                 </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="contact__title">Контакты</div>
-                    <div class="contact__text"> <img src="img/phone.svg" alt="" class="contact__icon"> <a
-                            href="tel:1-562-867-5309">+43-688-643-010-17</a> </div>
-                    <div class="contact__text"> <img src="img/gps.svg" alt="" class="contact__icon"> <a
-                            href="#">Stephansplatz 1,
-                            1010 Vienna</a> </div>
-                    <div class="contact__text"> <img src="img/mail.svg" alt="" class="contact__icon"> <a
-                            href="#">ulya's_nails@gmail.com</a> </div>
-                    <div class="social__items">
-                        <a href="https://www.instagram.com/__usimarit__/?hl=en"><img src="img/instagram.svg" alt=""
-                                class="social__icon"></a>
-                        <a href="#"><img src="img/whatsapp.svg" alt="" class="social__icon"></a>
-                        <a href="#"><img src="img/telegram.svg" alt="" class="social__icon"></a>
-                        <a href="#"><img src="img/facebook.svg" alt="" class="social__icon"></a>
+                <div class="mySlides">
+                    <div class="numbertext">2 / 6</div> <img src="img/slide2.jpg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">3 / 6</div> <img src="img/slide1.jpg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">4 / 6</div> <img src="img/slide2.jpg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">5 / 6</div> <img src="img/slide1.jpg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">6 / 6</div> <img src="img/slide2.jpg" style="width:100%">
+                </div>
+                <!-- Next and previous buttons --><a class="prev" onclick="plusSlides(-1)">&#10094;</a> <a class="next"
+                    onclick="plusSlides(1)">&#10095;</a>
+                <!-- Image text -->
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+                <!-- Thumbnail images -->
+                <div class="row">
+                    <div class="column"> <img class="demo cursor" src="img/slide1.jpg" style="width:100%"
+                            onclick="currentSlide(1)" alt="some description"> </div>
+                    <div class="column"> <img class="demo cursor" src="img/slide2.jpg" style="width:100%"
+                            onclick="currentSlide(2)" alt="some description"> </div>
+                    <div class="column"> <img class="demo cursor" src="img/slide1.jpg" style="width:100%"
+                            onclick="currentSlide(3)" alt="some description"> </div>
+                    <div class="column"> <img class="demo cursor" src="img/slide2.jpg" style="width:100%"
+                            onclick="currentSlide(4)" alt="some description"> </div>
+                    <div class="column"> <img class="demo cursor" src="img/slide1.jpg" style="width:100%"
+                            onclick="currentSlide(5)" alt="some description"> </div>
+                    <div class="column"> <img class="demo cursor" src="img/slide2.jpg" style="width:100%"
+                            onclick="currentSlide(6)" alt="some description"> </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--CONTACT - MAP-->
+    <section class="section-contacts">
+        <div class="map">
+            <div class="container">
+                <h3 class="chapter__title">Мои Контакты</h3>
+            </div>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2491.6247282082463!2d16.37094590461666!3d48.208278457576064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476d079f2959e943%3A0xa136325952cf712e!2sStephansplatz!5e0!3m2!1sen!2sat!4v1595683353645!5m2!1sen!2sat"
+                width="100%" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                tabindex="0"></iframe>
+        </div>
+        <!--CONTACT-->
+        <div class="contact">
+            <div id="a4" class="container">
+                <div class="row">
+                    <div class="col-md-4 col-sm-6">
+                        <div class="contact__title">Коротко о нас</div>
+                        <div class="contact__text">Ухоженные ногти, с красивым рисунком украсят и разнообразят Ваш
+                            образ,
+                            внесут в него новизну. Дизайн ногтей фото 2020 предлагает интересные варианты, как сделать
+                            маникюр стильным и модным. Сделайте свой образ оригинальным, ярким и завершенным с помощью
+                            маникюра. Красивый, модный маникюр с дизайном – это украшение женщины.</div>
                     </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="contact__title">Контакты</div>
+                        <div class="contact__text"> <img src="img/phone.svg" alt="" class="contact__icon"> <a
+                                href="tel:1-562-867-5309">+43-688-643-010-17</a> </div>
+                        <div class="contact__text"> <img src="img/gps.svg" alt="" class="contact__icon"> <a
+                                href="#">Stephansplatz 1,
+                                1010 Vienna</a> </div>
+                        <div class="contact__text"> <img src="img/mail.svg" alt="" class="contact__icon"> <a
+                                href="#">ulya's_nails@gmail.com</a> </div>
+                        <div class="social__items">
+                            <a href="https://www.instagram.com/__usimarit__/?hl=en"><img src="img/instagram.svg" alt=""
+                                    class="social__icon"></a>
+                            <a href="#"><img src="img/whatsapp.svg" alt="" class="social__icon"></a>
+                            <a href="#"><img src="img/telegram.svg" alt="" class="social__icon"></a>
+                            <a href="#"><img src="img/facebook.svg" alt="" class="social__icon"></a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12"></div>
                 </div>
-                <div class="col-md-4 col-sm-12"></div>
             </div>
         </div>
-    </div>
-    <!--FOOTER-->
-    <footer>
-        <div class="container">
-            <div class="">
-                <p>© 2020</p>
+        <!--FOOTER-->
+        <footer>
+            <div class="container">
+                <div class="">
+                    <p>© 2020</p>
+                </div>
             </div>
-        </div>
-    </footer>
+        </footer>
+    </section>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="js/main.js"></script>

@@ -24,6 +24,20 @@
 
 }
 
+.no-scroll {
+    padding: 0.9em 0;
+    transition: padding .2s;
+}
+
+.scroll {
+    padding: 0rem 0;
+    transition: padding .2s;
+
+    @media (max-width: 846px) {
+        padding: 0.8rem 0;
+    }
+}
+
 
 /* Условие для экранов с шириной от 0 до 1200px */
 
@@ -70,6 +84,9 @@
     }
 }
 
+.nav__link-active{
+    color: @pink;
+}
 
 /* --------------- Mobile navigation button ----------- */
 

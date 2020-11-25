@@ -2,6 +2,11 @@
 
 @import "vars";
 
+
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-color: @pink;
     font-size: 14px;
@@ -15,6 +20,10 @@ body {
     margin-bottom: 2rem;
     padding-top: 4rem;
 
+}
+
+.modal-open {
+    overflow: hidden;
 }
 
 @media (max-width: 995px) {

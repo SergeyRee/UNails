@@ -9,13 +9,6 @@
     margin-bottom: 5rem;
 }
 
-/* Photo */
-
-* {
-    box-sizing: border-box;
-}
-
-
 /* Position the image container (needed to position the left and right arrows) */
 
 .gallery .container {
@@ -43,9 +36,9 @@
 .next {
     cursor: pointer;
     position: absolute;
-    top: 40%;
+    top: 60%;
     width: auto;
-    padding: 16px;
+    padding: -0px;
     margin-top: -50px;
     color: white;
     font-weight: bold;
@@ -53,13 +46,14 @@
     border-radius: 0 3px 3px 0;
     user-select: none;
     -webkit-user-select: none;
+    background-color:  @darkgreen;
 }
 
 
 /* Position the "next button" to the right */
 
 .next {
-    right: 0;
+    right: 15px;
     border-radius: 3px 0 0 3px;
 }
 
